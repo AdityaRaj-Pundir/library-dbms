@@ -1,0 +1,15 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+a {
+    text-decoration: none;
+    color: #432b68;
+    transition: background-color 0.25s ease-in-out;
+}
+
+a:hover {
+    color: #0083e8;
+}

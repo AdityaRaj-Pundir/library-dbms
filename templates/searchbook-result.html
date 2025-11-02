@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Search Result
+{% endblock %}
+
+{% block main %}
+   <div style='text-align: center;'>
+    <table class='table table-striped'>
+        <tr>
+            <th>Book ID</th>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Issue Status</th>
+            <th>Issued By</th>
+        </tr>
+        {% for row in result %}
+            <tr>
+                <td>{{ row.bookid }}</td>
+                <td>{{ row.bookname }}</td>
+                <td>{{ row.authorname }}</td>
+                <td>{{ row.status }}</td>
+                <td>{{ row.username }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+   </div>
+{% endblock %}

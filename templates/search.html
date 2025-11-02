@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form action="/searchbook" method="post">
+        <div class="mb-3">
+            <input autocomplete='off' class="form-control mx-auto w-auto" name="name" placeholder="Book Name" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Search Book</button>
+    </form>
+    <br>
+    <form action="/searchauthor" method="post">
+        <div class="mb-3">
+            <input autocomplete='off' class="form-control mx-auto w-auto" name="name" placeholder="Author Name" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Search Author</button>
+    </form>
+{% endblock %}

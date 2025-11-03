@@ -203,3 +203,6 @@ def returnbook():
         db.execute('update books set status = "not issued" where bookid = ?', request.form.get('bookid'))
         db.execute('update books set userid = null where bookid = ?', request.form.get('bookid'))
         return redirect('/')
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', debug=True)

@@ -1,5 +1,8 @@
 # Library Database Management System
 #### Video Demo:  https://youtu.be/p3PEtIO9NOY
+#### Try It: https://library-dbms-69c7.onrender.com/login
+> [!NOTE]
+> When opening the site, you may experience a delay (Up to a minute) or the site may say `Not found` when accessing. If so, refresh the page. This is a problem with Render's free tier for hosting flask applications
 #### Description: Online Library Management System that allows for its users to issue and return books, search authors or books available in the library's database, and keep a log of all their issues.
 
 ## Starting with the Library Database Management System
